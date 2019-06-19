@@ -23,6 +23,7 @@ def word_substituter(string)
       strWords += word
     else
       strWords += word + " "
+    end
   end
   return strWords
 end
