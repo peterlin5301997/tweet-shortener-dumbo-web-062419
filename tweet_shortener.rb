@@ -1,5 +1,5 @@
 # Write your code here.
-def dictionary
+def dictionary do
   dictionary = {
     "hello" => "hi",
     "to" => "2", "two" => "2", "too" => "2",
@@ -11,7 +11,7 @@ def dictionary
   }
 end
 
-def word_substituter(string)
+def word_substituter(string) do
   arrWords = string.split
   count = 0
   dictionary
@@ -34,8 +34,12 @@ def word_substituter(string)
   return strWords
 end
 
-def bulk_tweet_shortener(array)
+def bulk_tweet_shortener(array) do
   array.each do |tweet|
     puts word_substituter(tweet)
   end
+end
+
+def selective_tweet_shortener(string) do
+
 end
