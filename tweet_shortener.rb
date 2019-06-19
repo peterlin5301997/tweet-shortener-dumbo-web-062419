@@ -20,7 +20,7 @@ def word_substituter(string)
         arrWords[count] = value
       end
     end
-    count++
+    count += 1
   end
   strWords = ""
   arrWords.each do |word|
