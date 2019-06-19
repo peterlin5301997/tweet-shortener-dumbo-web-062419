@@ -19,7 +19,10 @@ def word_substituter(string)
   end
   strWords = ""
   arrWords.each do |word|
-    strWords += word
+    if word == word.last
+      strWords += word
+    else
+      strWords += word + " "
   end
   return strWords
 end
