@@ -17,4 +17,9 @@ def word_substituter(string)
       word = dictionary.values
     end
   end
+  strWords = ""
+  arrWords.each do |word|
+    strWords += word
+  end
+  return strWords
 end
