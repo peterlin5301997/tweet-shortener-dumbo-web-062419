@@ -33,3 +33,7 @@ def word_substituter(string)
   end
   return strWords
 end
+
+def bulk_tweet_shortener(array)
+
+end
