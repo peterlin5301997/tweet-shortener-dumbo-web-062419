@@ -12,8 +12,16 @@ end
 
 def word_substituter(string)
   arrWords = string.split
+  count = 0
   dictionary
-
+  while count < arrWords.length do
+    dictionary.each do |key, value|
+      if arrWords[count] == key
+        arrWords[count] = value
+      end
+    end
+    count++
+  end
   strWords = ""
   arrWords.each do |word|
     if word == arrWords.last
