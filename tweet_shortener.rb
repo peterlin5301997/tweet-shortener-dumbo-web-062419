@@ -14,7 +14,7 @@ def word_substituter(string)
   arrWords = string.split
   dictionary
   arrWords.each do |word|
-    
+
   end
   strWords = ""
   arrWords.each do |word|
