@@ -17,7 +17,7 @@ def word_substituter(string)
   dictionary
   while count < arrWords.length do
     dictionary.each do |key, value|
-      if arrWords[count] == key
+      if arrWords[count] == key || arrWords[count] == key.capitalize
         arrWords[count] = value
       end
     end
