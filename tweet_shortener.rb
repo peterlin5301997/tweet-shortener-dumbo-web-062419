@@ -14,8 +14,10 @@ def word_substituter(string)
   arrWords = string.split
   dictionary
   arrWords.each do |word|
-    if word == dictionary.keys
-      word = dictionary.values
+    dictionary.each do |key, value|
+      if word == key
+        word = value
+      end
     end
   end
   strWords = ""
