@@ -47,3 +47,13 @@ def selective_tweet_shortener(string) do
     return word_substituter(string)
   end
 end
+
+def shortened_tweet_truncator(string) do
+  truncate = ""
+  if string.length > 140 do
+    truncate = string[0..139] + "..."
+  else
+    return string
+  end
+  return truncate
+end
